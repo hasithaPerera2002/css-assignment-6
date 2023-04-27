@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="assets/charts.css-0.9.0/src/charts/_area.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+</head>
+<body>
+<nav class="navbar sticky-top bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="nav-top-name">
+            <div>
+                <img src="assets/img/colorful-circle-with-cart-it-word-shopping-it.jpg" alt="">
+            </div>
+            <div>
+                <a>Uresha POS System</a>
+            </div>
+            <div>
+                <ul>
+                    <li>HOME</li>
+                    <li>ORDERS</li>
+                    <li>ITEMS</li>
+                    <li>OTHERS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-top-left">
+            <div><a><img src="" alt="">SignIn</a></div>
+            <div><a><img src="" alt="">LogIn</a></div>
+        </div>
+    </div>
+</nav>
+<section class="dashboard-context">
+    <div>
+        <div>
+
+        </div>
+    </div>
+    <div>
+        <div>
+
+        </div>
+    </div>
+    <div>
+        <div>
+
+        </div>
+    </div>
+
+    <article class="dash-article">
+        <table class="charts-css area" id="my-chart">
+
+            <tbody>
+            <tr>
+                <td style="--start: 0.2; --size: 0.4"><span class="data">  </span></td>
+            </tr>
+            <tr>
+                <td style="--start: 0.4; --size: 0.8"><span class="data">  </span></td>
+            </tr>
+            <tr>
+                <td style="--start: 0.8; --size: 0.6"><span class="data">  </span></td>
+            </tr>
+            <tr>
+                <td style="--start: 0.6; --size: 1.0"><span class="data">  </span></td>
+            </tr>
+            <tr>
+                <td style="--start: 1.0; --size: 0.3"><span class="data"> </span></td>
+            </tr>
+            </tbody>
+
+        </table>
+
+    </article>
+    <p class="context-name">#DASHBOARD</p>
+</section>
+<section class="customer-context">
+    <h1 class="context-name">#CUSTOMER</h1>
+    <div id="add-customer">
+        <div class="form">
+            <div class="form-floating mb-3" id="name">
+                <input type="text" class="form-control" id="floatingInputName" placeholder="kamal">
+                <label for="floatingInputName">NAME</label>
+            </div>
+            <div class="form-floating mb-3" id="age">
+                <input type="number" class="form-control" id="floatingInputAge" placeholder="18">
+                <label for="floatingInputAge">AGE</label>
+            </div>
+            <div class="form-floating mb-3" id="address">
+                <input type="text" class="form-control" id="floatingInputAddress" placeholder="thumpane">
+                <label for="floatingInputAddress">ADDRESS</label>
+            </div>
+            <div class="form-floating mb-3" id="salary">
+                <input type="number" class="form-control" id="floatingInputSalary" placeholder="thumpane">
+                <label for="floatingInputAddress">SALARY</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="customer-table-div">
+        <table class="greenTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>ITEM_NAME</th>
+                <th>QUANTITY</th>
+                <th>PRICE</th>
+                <th>OPTIONS</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td colspan="5">
+                </td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <td>cell1_1</td>
+                <td>cell2_1</td>
+                <td>cell3_1</td>
+                <td>cell4_1</td>
+                <td>cell5_1</td>
+            </tr>
+            <tr>
+                <td>cell1_2</td>
+                <td>cell2_2</td>
+                <td>cell3_2</td>
+                <td>cell4_2</td>
+                <td>cell5_2</td>
+            </tr>
+            <tr>
+                <td>cell1_3</td>
+                <td>cell2_3</td>
+                <td>cell3_3</td>
+                <td>cell4_3</td>
+                <td>cell5_3</td>
+            </tr>
+            <tr>
+                <td>cell1_4</td>
+                <td>cell2_4</td>
+                <td>cell3_4</td>
+                <td>cell4_4</td>
+                <td>cell5_4</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="item-context">
+    <p class="context-name">#ITEMS</p>
+    <div id="add-Item">
+        <div class="form2">
+            <div class="form-floating mb-3" id="itemName">
+                <input type="text" class="form-control" id="floatingInputIName" placeholder="kamal">
+                <label for="floatingInputIName"> ITEM_NAME</label>
+            </div>
+            <div class="form-floating mb-3" id="price">
+                <input type="number" class="form-control" id="floatingInputPrice" placeholder="18">
+                <label for="floatingInputPrice">PRICE</label>
+            </div>
+            <div class="form-floating mb-3" id="qty">
+                <input type="text" class="form-control" id="floatingInputQty" placeholder="thumpane">
+                <label for="floatingInputQty">QUANTITY</label>
+            </div>
+
+        </div>
+        <button type="button" class="btn btn-success">Success</button>
+    </div>
+    <div class="item-table-div">
+    <table class="greenTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>ITEM_NAME</th>
+            <th>QUANTITY</th>
+            <th>PRICE</th>
+            <th>OPTIONS</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="5">
+            </td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+            <td>cell1_1</td>
+            <td>cell2_1</td>
+            <td>cell3_1</td>
+            <td>cell4_1</td>
+            <td>cell5_1</td>
+        </tr>
+        <tr>
+            <td>cell1_2</td>
+            <td>cell2_2</td>
+            <td>cell3_2</td>
+            <td>cell4_2</td>
+            <td>cell5_2</td>
+        </tr>
+        <tr>
+            <td>cell1_3</td>
+            <td>cell2_3</td>
+            <td>cell3_3</td>
+            <td>cell4_3</td>
+            <td>cell5_3</td>
+        </tr>
+        <tr>
+            <td>cell1_4</td>
+            <td>cell2_4</td>
+            <td>cell3_4</td>
+            <td>cell4_4</td>
+            <td>cell5_4</td>
+        </tr>
+        <tr>
+            <td>cell1_5</td>
+            <td>cell2_5</td>
+            <td>cell3_5</td>
+            <td>cell4_5</td>
+            <td>cell5_5</td>
+        </tr>
+        <tr>
+            <td>cell1_5</td>
+            <td>cell2_5</td>
+            <td>cell3_5</td>
+            <td>cell4_5</td>
+            <td>cell5_5</td>
+        </tr>
+        <tr>
+            <td>cell1_5</td>
+            <td>cell2_5</td>
+            <td>cell3_5</td>
+            <td>cell4_5</td>
+            <td>cell5_5</td>
+        </tr>
+
+        <tr>
+            <td>cell1_5</td>
+            <td>cell2_5</td>
+            <td>cell3_5</td>
+            <td>cell4_5</td>
+            <td>cell5_5</td>
+        </tr> <tr>
+            <td>cell1_5</td>
+            <td>cell2_5</td>
+            <td>cell3_5</td>
+            <td>cell4_5</td>
+            <td>cell5_5</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    </section>
+</body>
+</html>

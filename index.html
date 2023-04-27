@@ -352,7 +352,12 @@
                 <article class="top-color">
                     <h5>SELECT ITEM</h5>
                 </article>
-                <div>
+                <div class="item-details">
+                    <div class="dropdown " id="item-drop">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Item
+                        </button>
+                    </div>
                     <div class="input-group2 input-group-sm mb-3" id="itemcode">
                         <input type="text" class="form-control" aria-label="Sizing example input"
                                aria-describedby="inputGroup-sizing-sm" placeholder="Code">
@@ -372,11 +377,25 @@
                     <div class="input-group2 input-group-sm mb-3" id="itemQty">
                         <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantity">
                     </div>
-
+                    <button type="button" id="btnSaveItemInvoice" class="btn btn-success">SAVE</button>
                 </div>
             </div>
-            <div class="order-div">
-
+            <div class="order-div purchase-context" >
+                <p >TOTAL</p>
+                <p>SUBTOTAL</p>
+                <div class="input-group2 input-group-sm mb-3" id="balance">
+                    <input type="number" class="form-control" aria-label="Sizing example input"
+                           aria-describedby="inputGroup-sizing-sm" placeholder="Balance">
+                </div>
+                <div class="input-group2 input-group-sm mb-3" id="discount">
+                    <input type="number" class="form-control" aria-label="Sizing example input"
+                           aria-describedby="inputGroup-sizing-sm" placeholder="Discount">
+                </div>
+                <div class="input-group2 input-group-sm mb-3" id="cash">
+                    <input type="number" class="form-control" aria-label="Sizing example input"
+                           placeholder="Cash">
+                </div>
+                <button type="button" id="btnPurchase" class="btn btn-success">PURCHASE</button>
             </div>
         </div>
     </div>
@@ -384,7 +403,7 @@
         <table class="greenTable">
             <thead>
             <tr>
-                <th>ID</th>
+                <th>ITEM_CODE</th>
                 <th>ITEM_NAME</th>
                 <th>QUANTITY</th>
                 <th>PRICE</th>

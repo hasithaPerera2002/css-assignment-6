@@ -384,7 +384,7 @@ table.greenTable tfoot .links a{
     height: 90%;
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: column wrap;
 }
 .content-invoice>div{
@@ -397,7 +397,72 @@ width: 40%;
     width: 80%;
 }
 #cust-drop{
-    top: 2rem;
+    top: 2%;
     left: 12rem;
     position: absolute;
+}
+#item-drop{
+    top: 6%;
+    left: 14rem;
+    position: absolute;
+}
+.item-details{
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+.item-details div{
+    left: 1rem;
+    position: relative;
+    width: 40%;
+
+}
+#btnSaveItemInvoice{
+    width: 30%;
+    position: absolute;
+    left: 13rem;
+    top: 19rem;
+
+}
+#btnPurchase{
+    left: 13rem;
+    position: absolute;
+    top: 21rem;
+}
+.purchase-context div{
+    left: 1rem;
+    width: 14rem;
+    position: absolute;
+}
+
+.purchase-context div:nth-child(2){
+    top: 13rem;
+}
+.purchase-context div:nth-child(3){
+    top: 18rem;
+}
+.purchase-context div:nth-child(4){
+    top: 15rem;
+}
+.purchase-context>p:first-child{
+    top: 2rem;
+    display: inline-flex;
+    position: absolute;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.purchase-context p:nth-child(2){
+    top: 6rem;
+    display: inline-flex;
+    position: absolute;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#cash{
+    top: 12rem;
 }

@@ -97,9 +97,130 @@
                 <label for="floatingInputAddress">SALARY</label>
             </div>
         </div>
+        <button type="button" id="btnSaveCustomer" class="btn btn-success">SAVE</button>
 
     </div>
+    <div class="input-group group-customer mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+               aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon3">SEARCH</button>
+    </div>
     <div class="customer-table-div">
+        <table class="greenTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>ADDRESS</th>
+                <th>SALARY</th>
+                <th>OPTIONS</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td colspan="5">
+                </td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <td>cell1_1</td>
+                <td>cell2_1</td>
+                <td>cell3_1</td>
+                <td>cell4_1</td>
+                <td>cell5_1</td>
+                <td>cell5_1</td>
+            </tr>
+            <tr>
+                <td>cell1_1</td>
+                <td>cell2_1</td>
+                <td>cell3_1</td>
+                <td>cell4_1</td>
+                <td>cell5_1</td>
+                <td>cell5_1</td>
+            </tr>
+            <tr>
+                <td>cell1_2</td>
+                <td>cell2_2</td>
+                <td>cell3_2</td>
+                <td>cell3_2</td>
+                <td>cell4_2</td>
+                <td>cell5_2</td>
+            </tr>
+            <tr>
+                <td>cell1_3</td>
+                <td>cell2_3</td>
+                <td>cell3_3</td>
+                <td>cell4_3</td>
+                <td>cell5_3</td>
+                <td>cell5_3</td>
+            </tr>
+            <tr>
+                <td>cell1_4</td>
+                <td>cell2_4</td>
+                <td>cell3_4</td>
+                <td>cell3_4</td>
+                <td>cell4_4</td>
+                <td>cell5_4</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="item-context">
+    <p class="context-name">#ITEMS</p>
+    <div id="add-Item">
+        <div class="form2">
+            <div class="form-floating mb-3" id="itemName">
+                <input type="text" class="form-control" id="floatingInputIName" placeholder="kamal">
+                <label for="floatingInputIName"> ITEM_NAME</label>
+            </div>
+            <div class="form-floating mb-3" id="price">
+                <input type="number" class="form-control" id="floatingInputPrice" placeholder="18">
+                <label for="floatingInputPrice">PRICE</label>
+            </div>
+            <div class="form-floating mb-3" id="qty">
+                <input type="text" class="form-control" id="floatingInputQty" placeholder="thumpane">
+                <label for="floatingInputQty">QUANTITY</label>
+            </div>
+
+        </div>
+        <button type="button" id="btnSaveItem" class="btn btn-success">SAVE</button>
+
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+               aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">SEARCH</button>
+    </div>
+    <div class="item-table-div">
         <table class="greenTable">
             <thead>
             <tr>
@@ -167,115 +288,155 @@
                 <td>cell5_5</td>
             </tr>
 
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="order-context">
+    <p class="context-name">#ORDERS</p>
+    <div class="order-context-div">
+        <div>
+            <div class="order-div">
+                <article class="top-color">
+                    <h5>INVOICE DETAILS</h5>
+                </article>
+                <main class="content-invoice">
+                    <div class="input-group2 input-group-sm mb-3" id="orderId">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="orderId">
+                    </div>
+                    <div class="dropdown " id="cust-drop">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Customer
+                        </button>
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="customerId">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="custId">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="customerName">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="name">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="date">
+                        <input type="date" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="date">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="custSalary">
+                        <input type="number" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="salary">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="custaddress">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="address">
+                    </div>
+                </main>
+
+
+            </div>
+            <div class="order-div">
+                <article class="top-color">
+                    <h5>SELECT ITEM</h5>
+                </article>
+                <div>
+                    <div class="input-group2 input-group-sm mb-3" id="itemcode">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="Code">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="itemName1">
+                        <input type="number" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="Item Name">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="itemPrice">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="Price">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="itemQtyOnHand">
+                        <input type="number" class="form-control" aria-label="Sizing example input"
+                               aria-describedby="inputGroup-sizing-sm" placeholder="QTY On Hand">
+                    </div>
+                    <div class="input-group2 input-group-sm mb-3" id="itemQty">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Quantity">
+                    </div>
+
+                </div>
+            </div>
+            <div class="order-div">
+
+            </div>
+        </div>
+    </div>
+    <div class="order-table-div">
+        <table class="greenTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>ITEM_NAME</th>
+                <th>QUANTITY</th>
+                <th>PRICE</th>
+                <th>OPTIONS</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td colspan="5">
+                </td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <td>cell1_1</td>
+                <td>cell2_1</td>
+                <td>cell3_1</td>
+                <td>cell4_1</td>
+                <td>cell5_1</td>
+            </tr>
+            <tr>
+                <td>cell1_2</td>
+                <td>cell2_2</td>
+                <td>cell3_2</td>
+                <td>cell4_2</td>
+                <td>cell5_2</td>
+            </tr>
+            <tr>
+                <td>cell1_3</td>
+                <td>cell2_3</td>
+                <td>cell3_3</td>
+                <td>cell4_3</td>
+                <td>cell5_3</td>
+            </tr>
+            <tr>
+                <td>cell1_4</td>
+                <td>cell2_4</td>
+                <td>cell3_4</td>
+                <td>cell4_4</td>
+                <td>cell5_4</td>
+            </tr>
+            <tr>
+                <td>cell1_5</td>
+                <td>cell2_5</td>
+                <td>cell3_5</td>
+                <td>cell4_5</td>
+                <td>cell5_5</td>
+            </tr>
 
             </tbody>
         </table>
     </div>
 </section>
-<section class="item-context">
-    <p class="context-name">#ITEMS</p>
-    <div id="add-Item">
-        <div class="form2">
-            <div class="form-floating mb-3" id="itemName">
-                <input type="text" class="form-control" id="floatingInputIName" placeholder="kamal">
-                <label for="floatingInputIName"> ITEM_NAME</label>
-            </div>
-            <div class="form-floating mb-3" id="price">
-                <input type="number" class="form-control" id="floatingInputPrice" placeholder="18">
-                <label for="floatingInputPrice">PRICE</label>
-            </div>
-            <div class="form-floating mb-3" id="qty">
-                <input type="text" class="form-control" id="floatingInputQty" placeholder="thumpane">
-                <label for="floatingInputQty">QUANTITY</label>
-            </div>
-
-        </div>
-        <button type="button" class="btn btn-success">Success</button>
-    </div>
-    <div class="item-table-div">
-    <table class="greenTable">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>ITEM_NAME</th>
-            <th>QUANTITY</th>
-            <th>PRICE</th>
-            <th>OPTIONS</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-            <td colspan="5">
-            </td>
-        </tr>
-        </tfoot>
-        <tbody>
-        <tr>
-            <td>cell1_1</td>
-            <td>cell2_1</td>
-            <td>cell3_1</td>
-            <td>cell4_1</td>
-            <td>cell5_1</td>
-        </tr>
-        <tr>
-            <td>cell1_2</td>
-            <td>cell2_2</td>
-            <td>cell3_2</td>
-            <td>cell4_2</td>
-            <td>cell5_2</td>
-        </tr>
-        <tr>
-            <td>cell1_3</td>
-            <td>cell2_3</td>
-            <td>cell3_3</td>
-            <td>cell4_3</td>
-            <td>cell5_3</td>
-        </tr>
-        <tr>
-            <td>cell1_4</td>
-            <td>cell2_4</td>
-            <td>cell3_4</td>
-            <td>cell4_4</td>
-            <td>cell5_4</td>
-        </tr>
-        <tr>
-            <td>cell1_5</td>
-            <td>cell2_5</td>
-            <td>cell3_5</td>
-            <td>cell4_5</td>
-            <td>cell5_5</td>
-        </tr>
-        <tr>
-            <td>cell1_5</td>
-            <td>cell2_5</td>
-            <td>cell3_5</td>
-            <td>cell4_5</td>
-            <td>cell5_5</td>
-        </tr>
-        <tr>
-            <td>cell1_5</td>
-            <td>cell2_5</td>
-            <td>cell3_5</td>
-            <td>cell4_5</td>
-            <td>cell5_5</td>
-        </tr>
-
-        <tr>
-            <td>cell1_5</td>
-            <td>cell2_5</td>
-            <td>cell3_5</td>
-            <td>cell4_5</td>
-            <td>cell5_5</td>
-        </tr> <tr>
-            <td>cell1_5</td>
-            <td>cell2_5</td>
-            <td>cell3_5</td>
-            <td>cell4_5</td>
-            <td>cell5_5</td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-    </section>
 </body>
 </html>

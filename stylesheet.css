@@ -1,3 +1,7 @@
+@media (min-width:240px ) and (max-width:1024px ){
+
+}
+
 .navbar {
     background-color: #fff;
     box-shadow: 0.5em 0.1em 0.5rem 0 black;
@@ -398,12 +402,12 @@ width: 40%;
 }
 #cust-drop{
     top: 2%;
-    left: 12rem;
+    left: 55%;
     position: absolute;
 }
 #item-drop{
     top: 6%;
-    left: 14rem;
+    left: 64%;
     position: absolute;
 }
 .item-details{
@@ -423,12 +427,12 @@ width: 40%;
 #btnSaveItemInvoice{
     width: 30%;
     position: absolute;
-    left: 13rem;
+    left: 62%;
     top: 19rem;
 
 }
 #btnPurchase{
-    left: 13rem;
+    left: 53%;
     position: absolute;
     top: 21rem;
 }
